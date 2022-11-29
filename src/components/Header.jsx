@@ -1,5 +1,6 @@
 import React from 'react'
 import AdddedList from './AdddedList'
+import Nav from './Nav'
 
 function header() {
     return (
@@ -19,8 +20,7 @@ function header() {
                     <div className='text-gray-400'>Add Task</div>
                 </header>
                 <AdddedList/>
-                
-                
+                                
             </div>
         </div>)
 }
