@@ -19,8 +19,16 @@ function header() {
                     </button>
                     <div className='text-gray-400'>Add Task</div>
                 </header>
-                <AdddedList/>
-                                
+                <AdddedList />
+                {/* <nav className='flex justify-between'>
+                    <div className='w-1/3 border text-center hover:bg-blue-400'>
+                        <img src='https://cdn-icons-png.flaticon.com/512/1828/1828866.png' alt='Home Icon'
+                            className='w-4 block mx-auto p-3 box-border'></img>
+                    </div>
+                    <div className='w-1/3 border'></div>
+                    <div className='w-1/3 border'></div>
+                </nav> */}
+                <Nav/>
             </div>
         </div>)
 }
