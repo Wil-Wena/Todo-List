@@ -28,15 +28,17 @@ function FormControl(props) {
 
 
     return (
-        <form onSubmit={handleSubmit} className='flex flex-row h-screen justify-center items-center' >
+        
+        <form onSubmit={handleSubmit} className='flex flex-row' >
             <input type='text' placeholder='Add a todo'
                 value={input}
                 name='text'
                 onChange={handleChange}
                 ref={inputRef}
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 capitalize"
+                autoComplete='off'
+                className="bg-gray-50 !outline-none border-2 border-violet-900  text-gray-900 text-sm rounded block  p-1.5 capitalize"
             ></input>
-            <button className='px-4 py-2 ml-5 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white'>Add button</button>
+            <button className='p-1.5 text-white bg-violet-900 hover:bg-violet-500'>Add button</button>
         </form>
 
 
